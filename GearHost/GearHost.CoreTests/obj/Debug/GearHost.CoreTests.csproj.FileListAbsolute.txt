@@ -1,0 +1,10 @@
+C:\Users\dusti_000\Documents\GitHub\GearHost-Net\GearHost\GearHost.CoreTests\bin\Debug\GearHost.CoreTests.dll.config
+C:\Users\dusti_000\Documents\GitHub\GearHost-Net\GearHost\GearHost.CoreTests\bin\Debug\GearHost.CoreTests.dll
+C:\Users\dusti_000\Documents\GitHub\GearHost-Net\GearHost\GearHost.CoreTests\bin\Debug\GearHost.CoreTests.pdb
+C:\Users\dusti_000\Documents\GitHub\GearHost-Net\GearHost\GearHost.CoreTests\bin\Debug\GearHost.Core.dll
+C:\Users\dusti_000\Documents\GitHub\GearHost-Net\GearHost\GearHost.CoreTests\bin\Debug\GearHost.Core.pdb
+C:\Users\dusti_000\Documents\GitHub\GearHost-Net\GearHost\GearHost.CoreTests\obj\Debug\GearHost.CoreTests.csprojResolveAssemblyReference.cache
+C:\Users\dusti_000\Documents\GitHub\GearHost-Net\GearHost\GearHost.CoreTests\obj\Debug\GearHost.CoreTests.dll
+C:\Users\dusti_000\Documents\GitHub\GearHost-Net\GearHost\GearHost.CoreTests\obj\Debug\GearHost.CoreTests.pdb
+C:\Users\dusti_000\Documents\GitHub\GearHost-Net\GearHost\GearHost.CoreTests\bin\Debug\RestSharp.dll
+C:\Users\dusti_000\Documents\GitHub\GearHost-Net\GearHost\GearHost.CoreTests\bin\Debug\RestSharp.xml
