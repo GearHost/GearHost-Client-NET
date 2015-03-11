@@ -1,4 +1,4 @@
-# Net-GearHost
+# GearHost .NET Client
 .NET client wrapper for the GearHost API.
 
 
@@ -18,7 +18,6 @@ Next, you'll need to add a **gearhost** section to your config file.
 ```xml
   <gearhost
       baseUrl="http://api.gearhost.com/"
-      primaryApiKey="primaryApiKey"
-    />
+      primaryApiKey="primaryApiKey" />
 ```
 
