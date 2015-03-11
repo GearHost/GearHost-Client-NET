@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace GearHost.Core
 {
+  using System;
+  using System.Net;
+
   using RestSharp;
   using RestSharp.Serializers;
 
@@ -59,7 +58,13 @@ namespace GearHost.Core
 
       BaseUrl = baseUrl;
 
-      _client = new RestClient() { UserAgent = UserAgent, BaseUrl = new Uri(Config.ApiBaseUrl) };
+      _client = new RestClient()
+                  {
+                    UserAgent = UserAgent, 
+                    BaseUrl = new Uri(Config.ApiBaseUrl),
+                    Authenticator = new HttpBasicAuthenticator("api-key", primaryApiKey),
+                    CookieContainer = new CookieContainer()
+                  };
     }
 
     #endregion
@@ -93,7 +98,6 @@ namespace GearHost.Core
       }
 
       this.InitializeRequest(request);
-
       var response = this._client.Execute<T>(request);
 
       if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
@@ -129,7 +133,6 @@ namespace GearHost.Core
       request.JsonSerializer = new JsonSerializer();
 
       request.AddHeader("Authorization", string.Format("api-key {0}", this.PrimaryApiKey));
-
     }
   }
 }

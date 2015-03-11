@@ -19,7 +19,7 @@ namespace GearHost.CoreTests
     public void Config_ApiBaseUrl_Equals_GearHostApiUrl()
     {
       var vut = Config.ApiBaseUrl;
-      Assert.AreEqual(vut, "http://api.gearhost.com/api/");
+      Assert.AreEqual(vut, "https://api.gearhost.com/");
     }
 
     [TestMethod]
@@ -33,7 +33,7 @@ namespace GearHost.CoreTests
     public void Config_PrimaryApiKey_Equals_primaryApiKey()
     {
       var vut = Config.PrimaryApiKey;
-      Assert.AreEqual(vut, "primaryApiKey");
+      Assert.AreEqual(vut, "dff0af8d4cae4f3baeb0bdb96bfe5e67");
     }
   }
 }

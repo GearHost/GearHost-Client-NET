@@ -17,7 +17,7 @@ Next, you'll need to add a **gearhost** section to your config file.
 
 ```xml
   <gearhost
-      baseUrl="http://api.gearhost.com/api/"
+      baseUrl="http://api.gearhost.com/"
       primaryApiKey="primaryApiKey"
     />
 ```
