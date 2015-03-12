@@ -61,5 +61,40 @@ namespace GearHost.CoreTests
       var result = cut.Actions.Get();
       Assert.IsTrue(result.Count > 0);
     }
+
+    /// <summary>
+    /// Get Action By Id integration test.
+    /// </summary>
+    [TestMethod]
+    public void Get_Action_By_Id()
+    {
+      var id = "2c62b712-3e5e-4603-9b57-28cc3e5820bd";
+      var cut = new GearHostClient();
+      var result = cut.Actions.GetById(id);
+      Assert.AreEqual(result.id, id);
+    }
+
+    /// <summary>
+    /// Get Actions integration test.
+    /// </summary>
+    [TestMethod]
+    public void Get_CloudSites_Count_Greater_Than_Zero()
+    {
+      var cut = new GearHostClient();
+      var result = cut.CloudSites.Get();
+      Assert.IsTrue(result.Count > 0);
+    }
+
+    /// <summary>
+    /// Get Action By Id integration test.
+    /// </summary>
+    [TestMethod]
+    public void Get_CloudSites_By_Id()
+    {
+      var id = "c3f774a4-71e3-4639-a157-7118083d7041";
+      var cut = new GearHostClient();
+      var result = cut.CloudSites.GetById(id);
+      Assert.AreEqual(result.id, id);
+    }
   }
 }

@@ -26,6 +26,8 @@ namespace GearHost.Core.Contracts
 
   public interface IActionService
   {
-    Actions Get();
+    Actions Get(int page = 1);
+
+    Action GetById(string id);
   }
 }

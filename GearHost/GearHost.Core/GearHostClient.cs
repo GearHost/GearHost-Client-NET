@@ -39,6 +39,11 @@ namespace GearHost.Core
     /// </summary>
     public IActionService Actions { get; private set; }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    public ICloudSiteService CloudSites { get; private set; }
+
     #endregion
 
     #region Constructors
@@ -52,6 +57,7 @@ namespace GearHost.Core
     {
       this.Accounts = new AccountService(apiBaseUrl, primaryApiKey);
       this.Actions = new ActionService(apiBaseUrl, primaryApiKey);
+      this.CloudSites = new CloudSiteService(apiBaseUrl, primaryApiKey);
     }
 
     /// <summary>

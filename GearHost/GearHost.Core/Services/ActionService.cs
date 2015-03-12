@@ -33,10 +33,16 @@ namespace GearHost.Core.Services
       : base(apiBaseUrl, primaryApiKey)
     { }
 
-    public Actions Get()
+    public Actions Get(int page = 1)
     {
-      string url = string.Format("/{0}", ActionKey);
+      var url = string.Format("/{0}?page={1}", ActionKey, page);
       return this.GetRequest<Actions>(url, "actions");
+    }
+
+    public Action GetById(string id)
+    {
+      var url = string.Format("/{0}/{1}", ActionKey, id);
+      return this.GetRequest<Action>(url, "action");
     }
   }
 }

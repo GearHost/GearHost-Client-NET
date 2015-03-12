@@ -45,8 +45,10 @@
   <ItemGroup>
     <Compile Include="Contracts\IAccountService.cs" />
     <Compile Include="Contracts\IActionService.cs" />
+    <Compile Include="Contracts\ICloudSiteService.cs" />
     <Compile Include="Entities\Account.cs" />
     <Compile Include="Entities\Action.cs" />
+    <Compile Include="Entities\CloudSite.cs" />
     <Compile Include="GearHostApiBase.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="Configuration\GearHostSection.cs" />
@@ -55,6 +57,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AccountService.cs" />
     <Compile Include="Services\ActionService.cs" />
+    <Compile Include="Services\CloudSiteService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="nuget_pack.bat" />
