@@ -22,6 +22,8 @@
 
 namespace GearHost.CoreTests
 {
+  using System;
+
   using GearHost.Core;
 
   using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -95,6 +97,10 @@ namespace GearHost.CoreTests
       var cut = new GearHostClient();
       var result = cut.CloudSites.GetById(id);
       Assert.AreEqual(result.id, id);
+      Assert.AreEqual(result.name, "dustyhoppe");
+      Assert.AreEqual(result.plan, "standard");
+      Assert.AreEqual(result.dateCreated, DateTime.Parse("2014-12-10T22:12:53"));
+      Assert.AreEqual(result.instances, 1);
     }
   }
 }
